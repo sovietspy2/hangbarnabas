@@ -1,4 +1,33 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-#{welcome /}
+<h1>Futball klubok</h1>
+
+#{if flash.errorMessage != null}
+	<div style="color:red">${flash.errorMessage}</div>
+#{/if}
+
+<a href="/createKlub">Klub hozzadasa</a>
+
+
+<table style="margin-top: 10px;">
+	<tr>
+		<th>Klub neve</th>
+		<th>Varos</th>
+		<th>fizetesek osszege</th>
+		<th>jatekosok</th>
+		<th>delete</th>
+	</tr>
+
+#{list items:adat, as:'adat'}
+	<tr>
+		<td>${adat.nev}</td>
+		<td>${adat.varos}</td>
+		<td>${adat.fizetesek} Ft</td>
+		<td>${adat.jatekosokSzama} db fo</td>
+		<td><a href="klub?klubId=${adat.klubId}">Klub Megjelenitese</a></td>
+		<td><a href="deleteKlub?klubId=${adat.klubId}">Torles</a></td>
+	</tr>	
+#{/list}
+
+</table>
