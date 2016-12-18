@@ -1,0 +1,83 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h1>Jatekos hozzaadasa</h1>
+
+#{ifErrors}
+   <h2>Ajjaj! Hiba volt</h2>
+#{/ifErrors}
+
+<form action="createJatekos" method="post">
+   <table>
+   		<tr>
+   			<td align="right"> Klub:</td>
+   			<td>
+   				  <select name="klubId">
+      	#{list items:klubok, as:'klub'}
+      		<option value="${klub.klubId}" #{if flash.klubId == klub.klubId.toString()} selected="selected" #{/if}>
+      			${klub.nev}
+      		</option>
+      	#{/list}
+      </select>
+      <span style="color:red">#{error 'klubId' /}</span>
+   			</td>
+   		</tr>
+   		<tr>
+   			<td align="right">Nev:</td>
+   			<td>
+   				 <input type="text" name="nev" value="${flash.nev}" /> 
+     			 <span style="color:red">#{error 'nev' /}</span>
+   			</td>
+   		</tr>
+   		<tr>
+   			<td align="right">Szerzodes kezdete:</td>
+   			<td>
+	   			 <input type="text" name="szerzodesKezdete" value="${flash.szerzodesKezdete}" /> 
+	      		 <span style="color:red">#{error 'szerzodesKezdete' /}</span>
+   			</td>
+   		</tr>
+   		<tr>
+   			<td align="right">Szerzodes vege:</td>
+   			<td>
+	   			 <input type="text" name="szerzodesVege" value="${flash.szerzodesVege}" />
+	     		 <span style="color:red">#{error 'szerzodesVege' /}</span>
+   			</td>
+   		</tr>
+   		<tr>
+   			<td align="right">Engedelyszam:</td>
+   			<td>
+	   			 <input type="text" name="engedelyszam" value="${flash.engedelyszam}" /> 
+	     		 <span style="color:red">#{error 'engedelyszam' /}</span>
+			</td>
+   		</tr>
+   		<tr>
+   			<td align="right">Fizetes:</td>
+   			<td>
+	   			 <input type="text" name="fizetes" value="${flash.fizetes}" /> 
+	     		 <span style="color:red">#{error 'fizetes' /}</span>
+			</td>
+   		</tr>
+
+   		<tr>
+   			<td align="right">poszt:</td>
+   			<td>
+				<select name="poszt" >
+		      		#{list items:posztok, as:'posztok'}
+		      		<option value="${posztok}">
+		      			${posztok}
+		      		</option>
+		      	#{/list}
+		      	</select>
+		      	<span style="color:red">#{error 'poszt' /}</span>
+   			</td>
+   		</tr>
+   		<tr>
+   			<td>
+   			</td>
+   			<td>
+   				<input type="submit" value="Jatekos hozzadasa" /> 
+   			</td>   		
+   		</tr>
+   </table>
+</form>
+<a href="Kezdolap">Vissza</a>

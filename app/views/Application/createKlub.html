@@ -1,0 +1,36 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h1>klub letrehozasa</h1>
+
+#{ifErrors}
+   <h2>Ajjaj! Hiba volt</h2>
+#{/ifErrors}
+
+<form action="createKlub" method="post">
+   <div>
+      Klub neve: <input type="text" name="nev" value="${flash.nev}" />
+      <span style="color:red">#{error 'nev' /}</span>
+   </div>
+   <div>
+      Klub alapitasa: <input type="text" name="ev" value="${flash.ev}" /> 
+      <span style="color:red">#{error 'ev' /}</span>
+   </div>
+   <div>
+      Klub orszaga: <input type="text" name="orszag" value="${flash.orszag}" /> 
+      <span style="color:red">#{error 'orszag' /}</span>
+   </div>
+    <div>
+      Klub megye: <input type="text" name="megye" value="${flash.megye}" /> 
+      <span style="color:red">#{error 'megye' /}</span>
+   </div>
+    <div>
+      Klub telepules: <input type="text" name="varos" value="${flash.varos}" /> 
+      <span style="color:red">#{error 'varos' /}</span>
+   </div>
+    
+   <div>
+      <input type="submit" value="Klub hozzadasa" /> 
+   </div>
+</form>
+<a href="Kezdolap">Vissza</a>

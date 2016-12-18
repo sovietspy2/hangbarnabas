@@ -1,0 +1,58 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{if flash.errorMessage != null}
+	<div style="color:red">${flash.errorMessage}</div>
+#{/if}
+
+<a href="/createJatekos">Focista hozzadasa</a>
+
+<h1>${klub.nev}</h1>
+<p>${klub.ev}</p>
+<p>${klub.orszag}</p>
+<p>${klub.megye}</p>
+<p>${klub.varos}</p>
+
+ #{if kapusokSzama==0}
+ 	<p style="color:red">Nincs kapus!</p>
+#{/if}
+
+ #{if csatarokSzama==0}
+ 	<p style="color:red">Nincs csatar!</p>
+#{/if}
+
+ #{if kozeppalyasokSzama==0}
+ 	<p style="color:red">Nincs kozeppalyas!</p>
+#{/if}
+
+ #{if vedokSzama==0}
+ 	<p style="color:red">Nincs vedo!</p>
+#{/if}
+
+
+<table style="margin-top: 10px;">
+	<tr>
+		<th>nev</th>
+		<th>engedely</th>
+		<th>fizetes</th>
+		<th>szerzodes kezdete</th>
+		<th>szerzodes vege</th>
+		<th>poszt</th>
+		<th>torles</th>
+	</tr>
+
+#{list items:klub.jatekosok, as:'jatekos'}
+	<tr>
+		<td>${jatekos.nev}</td>
+		<td>${jatekos.engedelyszam}</td>
+		<td>${jatekos.fizetes}</td>
+		<td>${jatekos.szerzodesKezdete}</td>
+		<td>${jatekos.szerzodesVege}</td>
+		<td>${jatekos.poszt}</td>
+		<td><a href="deleteJatekos?jatekosId=${jatekos.jatekosId}">Torles</a></td>
+	</tr>	
+#{/list}
+
+</table>
+
+<a href="Kezdolap">Vissza</a>

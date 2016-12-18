@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="japidviews/**|rythm/**|views/**" kind="src" path="app"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="docviewer"/>
+	
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:\work\framework\play-1.4.3.jar" sourcepath="C:/work/framework/src" />
+	<classpathentry kind="lib" path="C:\work\modules\docviewer\lib\play-docviewer.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\asm-all-5.1.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\async-http-client-1.9.38.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\bcprov-jdk15-1.46.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\c3p0-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\c3p0-oracle-thin-extras-0.9.5.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\cglib-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\commons-email-1.4.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\commons-fileupload-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\commons-javaflow-1590792.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\ehcache-core-2.6.11.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\geronimo-servlet_2.5_spec-1.2.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\groovy-all-2.4.7.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\h2-1.4.192.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\hibernate-c3p0-4.2.19.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\hibernate-commons-annotations-4.0.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\hibernate-core-4.2.19.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\hibernate-ehcache-4.2.19.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\hibernate-entitymanager-4.2.19.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\hibernate-validator-4.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\ivy-2.4.0.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jamon-2.81.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\javassist-3.20.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\javax.inject-1.0.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jaxen-1.1.6.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jboss-logging-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jboss-transaction-api_1.1_spec-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jj-imaging.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jj-simplecaptcha.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jj-textile.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jj-wikitext.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\joda-time-2.9.4.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jregex-1.2_01.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\jsr107cache-1.1.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\mail-1.4.7.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\mchange-commons-java-0.2.11.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\mysql-connector-java-5.1.38.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\netty-3.10.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\org.eclipse.jdt.core-3.10.0.v20140604-1726.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\oval-1.85.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\postgresql-9.0.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\signpost-core-1.2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\slf4j-log4j12-1.7.21.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\snakeyaml-1.17.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\spymemcached-2.12.0.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\xmlpull-1.1.3.4d_b4_min.jar"/>
+	<classpathentry kind="lib" path="C:\work\framework\lib\xstream-1.4.8.jar"/>
+	
+	<classpathentry kind="output" path="eclipse/classes"/>
+</classpath>
